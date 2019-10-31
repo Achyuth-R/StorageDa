@@ -94,7 +94,8 @@
                 </li>
                 <li>
                   <div class="collapsible-header"><i class="material-icons">bug_report</i>create failsafe</div>
-                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                  <div class="collapsible-body"><span>To create a failsafe for a web page with vm's, we need to replicate the entire vm. For additional security the vm has to also be stored in a different location than the main server. If the same is to be maintained for dynamic web apps, we will also need to replicate the database. Another significant concern is that we need to create a synchronization mechanism to sync the databases and finally we will need to include a rule in the dns server to continually ping the server to see if its in healthy condition. In case the server has ever failed the dns server automatically routes to the failsafe server. </span></div>
+                    <div class="collapsible-body"><span>To do all this azure provide a service which allows you to create a duplicate server in a different geological location, it also automatically syncs up your databses and configures your namespace servers. </span></div>
                 </li>
               </ul>
             </div>
