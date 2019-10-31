@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaf detection</title>
+  <!-- Material Icon CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- custom styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- dropify css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.css">
+  <!-- Used as an example only to position the footer at the end of the page.
+    You can delete these styles or move it to your custom css file -->
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- testing side nav -->
+
+  <!-- end testing side nav -->
+  <header>
+    <nav class="grey darken-4 z-depth-5">
+      <div class="nav-wrapper">
+        <div class="container" style="width: 90%;">
+          <a href="#" class="brand-logo">Storage Technologies</a>
+          <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Digital Assignment</a></li>
+            <li><a href="#">Achyuth R 16BIT0237 </a></li>
+          </ul>
+          <!-- side bar hidden on large devices -->
+          <ul class="grey darken-3 z-depth-5 side-nav" id="mobile-menu">
+            <li>
+              <div class="userView">
+                <div class="background indigo darken-4">
+                  <!-- <img src="http://lorempixel.com/output/abstract-q-c-640-480-10.jpg" alt="Background Sidenav"> -->
+                </div>
+                <!-- <a href="#!user"><img class="circle" src="http://lorempixel.com/output/people-q-c-640-480-9.jpg" alt="User Image Sidenav"></a> -->
+                <a href="#!name"><span class="white-text name">John Doe</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+              </div>
+            </li>
+            <li><a href="#" class="white-text waves-effect">item1</a></li>
+            <li><a href="#" class="white-text waves-effect">item2</a></li>
+            <li><a href="#" class="white-text waves-effect">item3</a></li>
+            <li><a href="#" class="white-text waves-effect">item4</a></li>
+            <div class="indigo darken-3" style="position:fixed;bottom:8%;width: 100%;">
+              <li><a href="#" class="waves-effect white-text">logout</a></li>
+            </div>
+          </ul>
+          <!-- mobile menu side bar done -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main style="margin: 0%;">
+    <!-- <div class="container valign-wrapper" style="height: 100%;">
+      <div class="section" style="width: 100%;">
+          <input type="file" id="demo" class="dropify" data-height="300">
+      </div>      
+    </div> -->
+    <div class="container" style="width:100%; height : 100%;">
+      <div class="row" style="height: 100%;">
+        <div class="col s6 m6 l2"></div>
+        <div class="col s6 m6 l8" style="height: 95%;">
+            <div class="valign-wrapper" style=" height: 100%">
+              <ul class="collapsible" style="width: 100%" >
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>Create Vm</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>upload files</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>deploy server</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">bug_report</i>create failsafe</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="col s6 m6 l2"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="grey darken-4 page-footer ">
+    <div class="container" style="width:90%">
+      <div class="row">
+        <div class="col s12 m8 l6 ">
+          <h5 class="white-text ">ITE2009 </h5>
+        </div>
+        <div class="col s12 m4 l6 hide-on-med-and-down right-align">
+          <h5 class="white-text">Storage Technologies </h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Materialize JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- Dropify js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.js"></script>
+  <script>
+    $("document").ready(function () {
+      $(".button-collapse").sideNav();
+      $('.dropify').dropify();
+    });
+  </script>
+</body>
+
+</html>   
